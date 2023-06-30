@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write --plugin-search-dir=. ./**/*.html"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.4",
     "@tsconfig/svelte": "^4.0.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
     "svelte": "^3.58.0",
     "svelte-check": "^3.3.1",
     "tslib": "^2.5.0",
@@ -19,6 +22,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "firebase": "^9.23.0",
     "fullcalendar": "^6.1.8"
   }
 }
